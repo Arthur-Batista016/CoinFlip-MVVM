@@ -8,7 +8,7 @@ namespace CoinFlip
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new CoinView();
         }
     }
 }
