@@ -42,6 +42,7 @@ namespace CoinFlip.ViewModels
 
             Coin coin = new Coin();
             coin.Jogar();
+            Imagem = coin.LadoSorteado == "cara" ? "cara.jpg" : "coroa.jpg";
             Resultado = Escolha == coin.LadoSorteado ? "Você Venceu" : "Você Perdeu";// if Ternario = If resumido//
         }
     }
