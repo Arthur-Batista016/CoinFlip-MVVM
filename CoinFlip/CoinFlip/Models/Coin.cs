@@ -20,8 +20,8 @@ namespace CoinFlip.Models
 
         public String Jogar()
         {
-            //operador Ternario (?) basicamnete um if resumido (sempre devolve valor)//
-            return (new Random().Next(0, 2) == 0) ? "Cara" : "Coroa";
+            LadoSorteado = new Random().Next(2) == 0 ? "cara" : "coroa";
+            return (LadoSorteado);
         }
 
 
